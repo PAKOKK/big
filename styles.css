@@ -58,9 +58,7 @@ html{
     font-size: 24px;
 	scroll-behavior: smooth;
 }
-*{
-	border: 1px solid black;
-}
+
 h1{
 	font-weight: bold;
 	font-size: 2rem;
@@ -105,6 +103,7 @@ body{
 /*хедр*/
 header{
 	padding: 0 1rem;
+	margin-bottom: 2rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -205,6 +204,14 @@ footer{
 	background: rgb(4,114,24);
 	background: linear-gradient(0deg, rgba(4,114,24,1) 0%, rgba(223,242,227,1) 100%);
 }
+.footer__logo{
+	display: flex;
+	flex-direction: column;
+}
+.footer__logo img{
+	margin: 0 auto;
+	scale: 0.8;
+}
 footer p{
 	text-align: center;
 }
@@ -219,8 +226,5 @@ footer p{
 	html{
 		font-size: 18px;
 	}
-	footer img{
-		scale: 0.8;
-	}
-	
 }
+
