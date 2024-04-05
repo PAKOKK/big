@@ -1,3 +1,4 @@
+/*обнуление стилей*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,23 +42,30 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*обнуление стилей*/
 
+/*шрифты*/
 @font-face {
     font-family: Gilory;
     src: url('./font/Gilroy-Bold.ttf');
     font-weight: bold;
 }
-
 @font-face {
     font-family: Gilory;
     src: url('./font/Gilroy-Light.ttf');
     font-weight: 300;
 }
+html{
+    font-size: 24px;
+}
 
+/*цвета*/
 :root {
     --bg-color: #DFF2E3;
     --button-color: #047218;
     --gradient-header: linear-gradient(180deg, rgba(4, 114, 24, 0.57) 0%, rgba(115, 255, 145, 0.57) 93.02%);
     --gradient-footer: linear-gradient(180deg, rgba(115, 255, 145, 0.57) 0%, rgba(4, 114, 24, 0.57) 100%);
-  }
+}
+
+/*хедр*/
+/*мейн*/
+/*футер*/
