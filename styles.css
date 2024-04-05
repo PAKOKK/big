@@ -14,7 +14,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -55,17 +54,170 @@ table {
     font-weight: 300;
 }
 html{
+	font-family: Gilory;
     font-size: 24px;
+	scroll-behavior: smooth;
+}
+*{
+	border: 1px solid black;
+}
+h1{
+	font-weight: bold;
+	font-size: 2rem;
+}
+h2{
+	font-weight: bold;
+	font-size: 1rem;
+}
+h3{
+	font-weight: bold;
+	font-size: 0.7rem;
+}
+a{
+	text-decoration: none;
+	color: var(--white);
+}
+p{
+	font-weight: 300;
 }
 
 /*цвета*/
 :root {
+	--white:#FFF9F9;
     --bg-color: #DFF2E3;
-    --button-color: #047218;
-    --gradient-header: linear-gradient(180deg, rgba(4, 114, 24, 0.57) 0%, rgba(115, 255, 145, 0.57) 93.02%);
-    --gradient-footer: linear-gradient(180deg, rgba(115, 255, 145, 0.57) 0%, rgba(4, 114, 24, 0.57) 100%);
+    --button-color: #047218;}
+body{
+	background-color: var(--bg-color);
+	min-width: 768px;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 1rem;
 }
 
 /*хедр*/
+header{
+	padding: 0 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	color: var(--white);
+	background: rgb(4,114,24);
+	background: linear-gradient(180deg, rgba(4,114,24,1) 0%, rgba(223,242,227,1) 100%);
+}
 /*мейн*/
+.poster{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.poster img{
+	width: 80%;
+	border-radius: 1rem;
+}
+.form__short{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	gap: 2rem;
+}
+.form__short input{
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 0.25rem;
+	padding: 0.5rem 1rem;
+}
+.form__short button{
+	color: var(--white);
+	background-color: var(--button-color);
+	border: 1px solid black;
+	border-radius: 0.25rem;
+	text-wrap:nowrap;
+	padding: 0.5rem 1rem;
+	font-weight: bold;
+}
+.mockup{
+	width: 50%;
+	margin: 0 auto;
+}
+.about{
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.about h1{
+	margin: 0 auto;
+}
+.form__full{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+.form__full input{
+	width: 50%;
+	border: 1px solid black;
+	border-radius: 0.25rem;
+	padding: 0.5rem 1rem;
+}
+.form__full button{
+	width: 56%;
+	color: var(--white);
+	background-color: var(--button-color);
+	border: 1px solid black;
+	border-radius: 0.25rem;
+	text-wrap:nowrap;
+	padding: 0.5rem 1rem;
+	font-weight: bold;
+}
+.contacts{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+.contacts img{
+	width: 60%;
+	border-radius: 1rem;
+}
+.address{
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
 /*футер*/
+footer{
+	padding: 1rem;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	color: var(--white);
+	background: rgb(4,114,24);
+	background: linear-gradient(0deg, rgba(4,114,24,1) 0%, rgba(223,242,227,1) 100%);
+}
+footer p{
+	text-align: center;
+}
+.h3__footer__left{
+	width: 200px;
+}
+.h3__footer__right{
+	width: 200px;
+	text-align: right;
+}
+@media (max-width:768px) {
+	html{
+		font-size: 18px;
+	}
+	footer img{
+		scale: 0.8;
+	}
+	
+}
