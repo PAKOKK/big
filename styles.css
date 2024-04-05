@@ -87,6 +87,9 @@ p{
     --bg-color: #DFF2E3;
     --button-color: #047218;}
 body{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 	background-color: var(--bg-color);
 	min-width: 768px;
 }

@@ -16,9 +16,9 @@
         <div class="poster">
             <img src="./img/poster1.png"/>
         </div>
-        <form class="form__short">
-            <input placeholder="Ваш номер телефона для связи"/>
-            <button>ОСТАВИТЬ ЗАЯВКУ</button>
+        <form class="form__short" action="https://formspree.io/f/твойайдитут" method="post">
+            <input name="Tel" id="tel" type="tel" placeholder="Ваш номер телефона для связи" required>
+            <button type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
         </form>
         <img class="mockup" src="./img/mockup.png">
         <section class="about">
@@ -32,12 +32,12 @@
             <h1>КАРЬЕРА</h1>
             <p>Большой дом создает среду, которая поощряет совместный подход в сочетании с профессиональным ростом.</p><br> <p>У нас работают талантливые и целеустремленные, те, кто может доказать, что они работают по собственной инициативе в прогрессивной и сложной среде, и те, у кого есть необходимые навыки и опыт, чтобы использовать успех нашей процветающей компании.</p><br> <p>Мы признаем, что наши сотрудники являются нашим самым большим достоянием, и наша цель — предоставить им наилучшие возможности для роста и развития вместе с компанией, чтобы они могли реализовать свой потенциал.</p><br> Мы хотим привлечь самых талантливых и увлеченных людей присоединиться к нашему бизнесу. Большой дом стремится к равной оплате труда и обеспечению полноценной и обогащающей карьеры для наших сотрудников независимо от пола, религии, сексуальной ориентации, инвалидности или любых других защищенных характеристик.;</p>
         </section>
-        <form class="form__full">
+        <form class="form__full" action="https://formspree.io/f/твойайдитут" method="post">
             <h1>ВАША ОБРАТНАЯ СВЯЗЬ</h1>
-            <input placeholder="Ваше имя и фамилия"/>
-            <input placeholder="Ваш номер телефона"/>
-            <input placeholder="Ваш email"/>
-            <button>ОТПРАВИТЬ</button>
+            <input name="Text" id="text" type="text" placeholder="Ваше имя и фамилия" required>
+            <input name="tel" id="tel" type="tel" placeholder="Ваш номер телефона" required>
+            <input name="Email" id="email" type="email" placeholder="Ваш email" required>
+            <button type="submit">ОТПРАВИТЬ</button>
         </form>
 
         <section class="contact" id="contact">
